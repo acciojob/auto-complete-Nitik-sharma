@@ -28,11 +28,13 @@ console.log(get);
     <div className="container">
        <h1>Search item</h1>
        <input type="text" onChange={handleChange} value={input}/>
+       <ol>
        {
         get.map((item,index)=>(
           <li key={index}>{item}</li>
         ))
        }
+       </ol>
     </div>
   )
 }
